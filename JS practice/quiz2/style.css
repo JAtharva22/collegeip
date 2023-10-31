@@ -1,0 +1,61 @@
+.qnid {
+    margin: 40px auto;
+}
+
+.quiz-container h2 {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.qn {
+    margin-top: 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+input[type="radio"],
+label {
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 30px;
+}
+
+label {
+    font-size: 30px;
+}
+
+.mcq:hover input[type="radio"]+label:hover {
+    opacity: 0.8;
+    transition: 0.1s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px black;
+}
+
+.quiz-container {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+.result-container{
+    text-align: center;
+}

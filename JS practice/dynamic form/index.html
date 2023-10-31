@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic form</title>
+    <style>
+        button {
+            background-color: green;
+            color: white;
+        }
+        div{
+            padding: 10px 10px;
+        }
+        label{
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Create Your Form</h2>
+    <div>
+        <label for="type">Choose a type:</label>
+        <select id="type" name="type">
+            <option value="text">text</option>
+            <option value="number">number</option>
+            <option value="date">date</option>
+            <option value="email">email</option>
+        </select>
+
+        <input type="text" name="field" id="field">
+        <button id = 'b1'>Create</button>
+        <button id="b2">Reset</button>
+    </div>
+
+    <div id="second">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
