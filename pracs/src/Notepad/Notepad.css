@@ -1,0 +1,46 @@
+/* Notepad.css */
+
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Define a 1:2 grid layout */
+    grid-gap: 10px; /* Add some gap between the columns */
+  }
+
+.notelist-container{
+
+}
+
+.notepad-container {
+    height: 100vh;
+    /* width: 75%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.notepad-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    align-self: flex-start;
+}
+
+.notepad-content {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    resize: none;
+}
+
+.notepad-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.notepad-buttons button {
+    margin: 10px 0;
+    margin-left: 10px;
+}

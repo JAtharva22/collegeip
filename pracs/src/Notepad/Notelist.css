@@ -1,0 +1,53 @@
+/* Notelist.css */
+
+/* Style the list container */
+.list-container {
+    height: 100vh;
+    padding: 10px;
+    position: relative; /* Relative positioning for the container */
+  }
+  
+  /* Style the individual list items */
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Stretch to full width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  /* Style the title */
+  .list-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Style the delete button */
+  .list-item .del-btn {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  /* Style the add button */
+  .add-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning for the button */
+    bottom: 10px; /* Adjust the bottom value as needed */
+    left: 10px; /* Adjust the left value as needed */
+  }
+  

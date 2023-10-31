@@ -1,0 +1,24 @@
+// App.js
+import './App.css';
+import DateButton from './Components/DateButton';
+import Form from './Components/Form';
+import Navbar from './Components/Navbar';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+function App() {
+  const currentDate = new Date();
+  const formattedDate = currentDate.toLocaleDateString();
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<DateButton date={formattedDate} />} />
+        <Route path="/:form" element={<Form />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
