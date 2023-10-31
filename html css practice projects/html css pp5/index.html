@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            /* position: relative; */
+            height: 100vh;
+        }
+
+        .upper {
+            height: 75%;
+            background-color: yellow;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .divider {
+            position: absolute;
+            top: 75%;
+            left: 75%;
+            transform: translate(-75%, -75%);
+            width: 100%;
+            height: 0;
+            border-top: 2px solid yellow;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: calc(50% - 150px);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 200px 100px 200px;
+            border-color: transparent transparent yellow transparent;
+            transform: rotate(180deg)
+        }
+
+        .lower {
+            height: 25%;
+            background-color: red;
+        }
+
+        .words {
+            text-align: center;
+            margin-left: 100px !important; /* Adjust the value here */
+            margin-top: 50px;
+            font-size: 50px;
+            background-color: yellow;
+        }
+
+        .circle {
+            margin-top: 30px !important;
+            margin-left: 100px !important;
+            text-align: center;
+            font-size: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            opacity: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper">
+            <span class="words">Pinak Idea Lab</span>
+            <span class="circle">:)</span>
+        </div>
+
+        <div class="divider"></div>
+        <div class="lower"></div>
+    </div>
+</body>
+
+</html>
